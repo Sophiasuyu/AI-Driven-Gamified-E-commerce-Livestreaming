@@ -1,7 +1,10 @@
 # AI-Driven Gamified E-commerce Livestreaming
-**MSc Dissertation Project: Creative Computing Institute (UAL CCI)**
-
 **Author: Suyu Lu**
+**Student ID: 24000975**
+**Institution: University of the Arts London**
+**Department: Creative Computing Institute**
+**Degree Programme: MSc Computing and Creative Industry (Modular)**
+
 
 This repository hosts my Master’s dissertation project, exploring how AI-driven interaction, AR try-on, and gamification mechanics shape user experience, engagement, and trust in contemporary livestream commerce.
 It combines technical prototypes, research artifacts, and documentation used throughout the development and study process.
@@ -53,6 +56,7 @@ AI-Driven-Gamified-E-commerce-Livestreaming/
 ├── prototypes/               // All prototypes built during the project
 │     ├── tryon-mvp/         // Final working AR Try-On MVP
 │     └── douyin_live_chat_to_csv.py
+└──
 
 ```
 
@@ -74,7 +78,7 @@ This MVP simulates a livestream shopping environment with:
 * **3D asset fitting** using custom calculations in `fit.js`
 * **Add-to-cart interactions** mimicking e-commerce behaviour
 
-### ** Tech Stack**
+###  Tech Stack
 
 * JavaScript (ES6)
 * MediaPipe Tasks Vision (face / hand)
@@ -90,7 +94,7 @@ npm install
 npm run dev
 ```
 
-【Open the printed local URL in Chrome and allow camera access】
+[Open the printed local URL in Chrome and allow camera access]
 
 
 
