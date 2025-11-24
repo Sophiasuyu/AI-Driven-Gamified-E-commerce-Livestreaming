@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Handcrafted Silver Jewellery Live Try-on & Fortune-Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="live-page">
+      <!-- head -->
+      <header class="topbar">
+        <div class="title">Handcrafted Silver Jewellery Live Try-on & Fortune-Test</div>
+        <div class="live-status">● LIVE 1.2k</div>
+      </header>
+
+      <!-- main -->
+      <main class="stage-wrap">
+        <!-- host background -->
+        <div class="host-box">
+          <video src="/host.mp4" autoplay muted loop playsinline></video>
+        </div>
+
+        <!-- AR floating window -->
+        <div class="ar-box">
+          <div class="stage">
+            <video id="cam" playsinline></video>
+            <canvas id="overlay"></canvas>
+            <canvas id="hands"></canvas>
+          </div>
+          <div class="ar-controls">
+            <button id="btnCam" data-on="0">Enable Camera</button>
+            <button id="btnFace" class="has-tip" data-tip="Enable to try face jewelry in livestream">Face</button>
+            <button id="btnHand" class="has-tip" data-tip="Enable to try hand / bracelet items">Hand</button>
+            <span id="status">Idle</span>
+          </div>
+        </div>
+
+        <!-- comments -->
+        <div class="danmu" id="danmu"></div>
+
+        <!-- comments-input -->
+        <div class="danmu-box" id="danmuBox">
+          <div class="danmu-list" id="danmuList"></div>
+          <div class="danmu-input">
+            <input id="dmText" type="text" placeholder="Send a comment..." />
+            <button id="dmSend">Send</button>
+          </div>
+        </div>
+      </main>
+
+      <!-- products -->
+      <aside class="floating-card" id="productPanel">
+        <div class="panel-head">
+          <span>Featured pieces</span>
+          <button id="btnToggle">−</button>
+        </div>
+        <div class="panel-body" id="productList">
+          <!-- 1 -->
+          <div class="prod">
+            <img src="/assets/jewelry1.jpg" alt="">
+            <div class="p-meta">
+              <div class="p-name">Lotus Silver Headpiece</div>
+              <div class="p-price">£89</div>
+            </div>
+            <div class="p-actions">
+              <button class="p-add" data-name="Lotus Silver Headpiece">Add to cart</button>
+              <button
+                class="p-try"
+                data-type="head"
+                data-src="/assets/tryon/headpiece.png"
+                data-name="Lotus Silver Headpiece"
+              >Try it on</button>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="prod">
+            <img src="/assets/jewelry2.jpg" alt="">
+            <div class="p-meta">
+              <div class="p-name">Fluid Earrings</div>
+              <div class="p-price">£129</div>
+            </div>
+            <div class="p-actions">
+              <button class="p-add" data-name="Fluid Earrings">Add to cart</button>
+              <button
+                class="p-try"
+                data-type="head"
+                data-src="/assets/tryon/earpiece.png"
+                data-name="Fluid Earrings"
+              >Try it on</button>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="prod">
+            <img src="/assets/jewelry3.jpg" alt="">
+            <div class="p-meta">
+              <div class="p-name">Asymmetric Wrist Sculpture</div>
+              <div class="p-price">£69</div>
+            </div>
+            <div class="p-actions">
+              <button class="p-add" data-name="Asymmetric Wrist Sculpture">Add to cart</button>
+              <button
+                class="p-try"
+                data-type="hand"
+                data-src="/assets/tryon/ring.png"
+                data-name="Asymmetric Wrist Sculpture"
+              >Try it on</button>
+            </div>
+          </div>
+        </div>
+        <ul class="cart" id="cartList"></ul>
+      </aside>
+    </div>
+
+    <!-- mediapipe -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@latest/vision_bundle.js"></script>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
