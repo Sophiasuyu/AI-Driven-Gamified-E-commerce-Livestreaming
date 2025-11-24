@@ -1,6 +1,7 @@
 # AI-Driven Gamified E-commerce Livestreaming
 **MSc Dissertation Project: Creative Computing Institute (UAL CCI)**
-**Author: Suyu Lu **
+
+**Author: Suyu Lu**
 
 This repository hosts my Master’s dissertation project, exploring how AI-driven interaction, AR try-on, and gamification mechanics shape user experience, engagement, and trust in contemporary livestream commerce.
 It combines technical prototypes, research artifacts, and documentation used throughout the development and study process.
@@ -11,7 +12,7 @@ Modern e-commerce live streaming platforms exhibit conversion rates heavily reli
 
 
 
-So this project investigates:
+#### So this project investigates:
 
 1. How AR try-on alters users' perceptions of product authenticity and appeal
 
@@ -23,23 +24,17 @@ So this project investigates:
 
 
 
-**The project comprises:**
 
-1. Try-On MVP
+#### The project contains:
 
-Built with MediaPipe, JavaScript, Three.js, and Vite;
+1. Try-On MVP: Built with MediaPipe, JavaScript, Three.js, and Vite; Simulating AR jewellery try-on functionality within e-commerce livestreaming scenarios
 
-Simulating AR jewellery try-on functionality within e-commerce livestreaming scenarios
+2. Research documentation: Design workflows, milestone reports, inspiration boards, system diagrams
 
-
-2. Research documentation
-Design workflows, milestone reports, inspiration boards, system diagrams
-
-3. Prototypes and tools
-Including data processing scripts, early testing iterations, and other technical explorations
+3. Prototypes and tools: Including data processing scripts, early testing iterations, and other technical explorations
 
 
----
+
 
 ## Repository Structure
 
@@ -61,7 +56,6 @@ AI-Driven-Gamified-E-commerce-Livestreaming/
 
 ```
 
----
 
 
 ## Try-On MVP (Final Prototype)
@@ -71,7 +65,7 @@ Location:
 
 This MVP simulates a livestream shopping environment with:
 
-### ** Features**
+### Features
 
 * **AR face jewellery try-on** using MediaPipe Face Landmarker
 * **AR hand / bracelet try-on** using MediaPipe Hand Landmarker
@@ -96,37 +90,16 @@ npm install
 npm run dev
 ```
 
-Open the printed local URL in Chrome and allow camera access.
+【Open the printed local URL in Chrome and allow camera access】
 
-
----
-
-## Research Components
-
-All conceptual work, diagrams, and written artifacts used in the dissertation process are stored in `/docs`.
-This includes:
-
-* User journey diagrams
-* System architecture
-* Visual inspiration
-* Milestone reports
-* Technical workflow references
-
-These documents support the theoretical analysis in the dissertation.
-
----
 
 
 ## Other Prototypes & Tools
 
 ###  `douyin_live_chat_to_csv.py`
 
-A lightweight script for extracting Douyin livestream comments into structured CSV files.
-Used during early data exploration and behavioural analysis.
+This is a lightweight script developed during the project's preliminary research phase, designed to extract Douyin live stream comments into structured CSV files. It facilitates early-stage data exploration and analysis of audience behaviour within e-commerce live streaming sessions.
 
-More prototypes will be added as the project evolves.
-
----
 
 
 ## Project Progress Log
@@ -166,24 +139,15 @@ A simplified timeline of major development milestones.
 * Prepared the MVP for dissertation submission
 
 
----
 
 ## Future Work
 
-* Advanced gesture interactions (swipe to switch items)
-* Emotion-aware recommendation prompts
-* More realistic 3D jewellery rendering (HDRI + PBR materials)
-* Backend service for user behaviour logging
-* Integrating user testing data into adaptive UI logic
+In the next stage, the project will focus on expanding both the interaction layer and the technical realism of the AR try-on system. 
 
+Planned enhancements include: introducing advanced gesture-based interactions (such as swipe gestures for switching items), developing emotion-aware recommendation prompts that respond to users’ affective states, and improving visual fidelity through HDRI-based lighting and PBR materials for more realistic 3D jewellery rendering. 
 
----
+On the system side, upcoming work involves building a backend service for user behaviour logging, enabling long-term engagement analysis, and integrating user testing data into adaptive UI logic, allowing the interface to evolve and personalise itself based on real user behaviour patterns.
 
-## Acknowledgements
-
-* Creative Computing Institute (UAL)
-* MediaPipe (Google)
-* Three.js Community
-* Mentors and participants involved in user testing
+But yeah, overall, I’m genuinely happy with how this project turned out. I hope you enjoy experiencing it as much as I enjoyed building it, and I’d love to hear any suggestions or thoughts you may have:)
 
 
