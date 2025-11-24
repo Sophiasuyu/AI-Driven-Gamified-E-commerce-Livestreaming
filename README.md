@@ -1,8 +1,12 @@
 # AI-Driven Gamified E-commerce Livestreaming
 **Author: Suyu Lu**
+
 **Student ID: 24000975**
+
 **Institution: University of the Arts London**
+
 **Department: Creative Computing Institute**
+
 **Degree Programme: MSc Computing and Creative Industry (Modular)**
 
 
@@ -152,6 +156,6 @@ Planned enhancements include: introducing advanced gesture-based interactions (s
 
 On the system side, upcoming work involves building a backend service for user behaviour logging, enabling long-term engagement analysis, and integrating user testing data into adaptive UI logic, allowing the interface to evolve and personalise itself based on real user behaviour patterns.
 
-But yeah, overall, I’m genuinely happy with how this project turned out. I hope you enjoy experiencing it as much as I enjoyed building it, and I’d love to hear any suggestions or thoughts you may have:)
+But yeah, overall, I’m satisfied with how this project turned out. I hope you enjoy experiencing it as much as I enjoyed building it, and I’d love to hear any suggestions or thoughts you may have:)
 
 
