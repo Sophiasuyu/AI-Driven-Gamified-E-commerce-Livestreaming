@@ -1,6 +1,6 @@
 # AI-Driven Gamified E-commerce Livestreaming
-## MSc Dissertation Project: Creative Computing Institute (UAL CCI)
-## Author: Suyu Lu 
+**MSc Dissertation Project: Creative Computing Institute (UAL CCI)**
+**Author: Suyu Lu **
 
 This repository hosts my Master’s dissertation project, exploring how AI-driven interaction, AR try-on, and gamification mechanics shape user experience, engagement, and trust in contemporary livestream commerce.
 It combines technical prototypes, research artifacts, and documentation used throughout the development and study process.
@@ -23,23 +23,23 @@ So this project investigates:
 
 
 
-The project comprises:
+**The project comprises:**
 
-1. **A real, working Try-On MVP**
+1. Try-On MVP
 
 Built with MediaPipe, JavaScript, Three.js, and Vite;
 
 Simulating AR jewellery try-on functionality within e-commerce livestreaming scenarios
 
 
-2. **Research documentation**
+2. Research documentation
 Design workflows, milestone reports, inspiration boards, system diagrams
 
-3. **Prototypes and tools**
+3. Prototypes and tools
 Including data processing scripts, early testing iterations, and other technical explorations
 
 
-
+---
 
 ## Repository Structure
 
@@ -58,11 +58,10 @@ AI-Driven-Gamified-E-commerce-Livestreaming/
 ├── prototypes/               // All prototypes built during the project
 │     ├── tryon-mvp/         // Final working AR Try-On MVP
 │     └── douyin_live_chat_to_csv.py
-│
-└── (other academic outputs as needed)
+
 ```
 
-
+---
 
 
 ## Try-On MVP (Final Prototype)
@@ -100,7 +99,7 @@ npm run dev
 Open the printed local URL in Chrome and allow camera access.
 
 
-
+---
 
 ## Research Components
 
@@ -115,59 +114,59 @@ This includes:
 
 These documents support the theoretical analysis in the dissertation.
 
-
+---
 
 
 ## Other Prototypes & Tools
 
-### ** `douyin_live_chat_to_csv.py`**
+###  `douyin_live_chat_to_csv.py`
 
 A lightweight script for extracting Douyin livestream comments into structured CSV files.
 Used during early data exploration and behavioural analysis.
 
 More prototypes will be added as the project evolves.
 
-
+---
 
 
 ## Project Progress Log
 
 A simplified timeline of major development milestones.
 
-### **Week 1 — Research Setup & Technical Investigation**
+### Week 1  Research Setup & Technical Investigation
 
 * Literature review: gamification, AI UX, livestream commerce
 * Tested MediaPipe face tracking and hand landmarks
 * Defined project scope and technical feasibility
 
-### **Week 2 — First AR Try-On Demo**
+### Week 2  First AR Try-On Demo
 
 * Implemented basic face tracking
 * Built initial overlay alignment
 * Set up Vite environment and file structure
 * Designed livestream UI mock-up
 
-### **Week 3 — Interaction & Gamification Layer**
+### Week 3  Interaction & Gamification Layer
 
 * Added chatbox, fake comments, and UI actions
 * Added add-to-cart drawer and thumbnail preview
 * Implemented jitter smoothing for stable fitting
 * Recorded early demonstration video
 
-### **Week 4 — Multi-modal Try-On**
+### Week 4  Multi-modal Try-On
 
 * Added hand-based try-on (bracelet / ring simulation)
 * Integrated multiple 3D assets
 * Added host background video and timed events
 
-### **Week 5 — Documentation & Refinement**
+### Week 5  Documentation & Refinement
 
 * Cleaned code structure and wrote documentation
 * Organised repository into `docs` and `prototypes`
 * Prepared the MVP for dissertation submission
 
 
-
+---
 
 ## Future Work
 
@@ -178,7 +177,7 @@ A simplified timeline of major development milestones.
 * Integrating user testing data into adaptive UI logic
 
 
-
+---
 
 ## Acknowledgements
 
