@@ -1,60 +1,190 @@
-# Project Progress Log  
+# AI-Driven Gamified E-commerce Livestreaming
+## MSc Dissertation Project: Creative Computing Institute (UAL CCI)
+## Author: Suyu Lu 
 
-## Gamified for E-commerce Live Streaming
+This repository hosts my Master’s dissertation project, exploring how AI-driven interaction, AR try-on, and gamification mechanics shape user experience, engagement, and trust in contemporary livestream commerce.
+It combines technical prototypes, research artifacts, and documentation used throughout the development and study process.
 
-### Project Overview  
+## Project Overview  
 
-This repository hosts my Master’s thesis project. It investigates how gamification (through missions, rewards, and AI-driven interactions) can enhance engagement, conversion rates, and brand loyalty in live-stream shopping platforms.
+Modern e-commerce live streaming platforms exhibit conversion rates heavily reliant upon the personal charisma of hosts, discounts, brand influence, and emotionally driven interactive mechanisms. This is accompanied by high return rates following the subsidence of impulse purchases, which presents significant instability for merchants and creates an imbalance of power for hosts, requiring them to deliver high-intensity emotional value.
 
----
 
-## Timeline and Progress  
 
-### Week 1–2: Topic Definition and Literature Review  
-- Defined research question: How can gamification enhance participation and trust in live-stream e-commerce systems  
-- Reviewed literature on gamified UX, live-stream interaction models, and AI agents in engagement  
-- Created initial concept map and user journey sketches  
+So this project investigates:
 
-### Week 3–4: Ideation and System Architecture  
-- Developed three prototype directions:  
-  1. Gesture-based reward interaction  
-  2. Real-time emotion feedback for hosts  
-  3. Audience contribution visualization  
-- Finalized architecture using FastAPI for backend and Streamlit for frontend  
-- Built a mock database using JSON  
+1. How AR try-on alters users' perceptions of product authenticity and appeal
 
-### Week 5–6: Low-Fidelity Prototype  
-- Designed Figma interface for host and audience dashboards  
-- Built wireframes for main user flow: join room, earn points, view leaderboard  
-- Integrated AI text generation using Ollama  
+2. How gamification mechanisms (tasks, badges, rewards, interaction loops) influence attention and purchasing behaviour
 
-### Week 7–8: Implementation  
-- Created FastAPI endpoints for event handling and user sessions  
-- Built a real-time gamification engine for live interaction  
-- Developed early Streamlit interface  
+3. How AI-driven prompts (automatic recommendations, product rankings, adaptive interfaces) reshape audience agency
 
-### Week 9–10: Testing and Refinement  
-- Conducted usability test with 5 participants  
-- Collected feedback on clarity and engagement  
-- Improved performance and reduced event latency  
+4. How these systems transform the dynamic interplay of trust, engagement, and co-creation
 
-### Week 11: Visual Design and Documentation  
-- Applied consistent visual system based on brand identity  
-- Updated flow diagrams and technical stack illustrations  
-- Started writing the final report (methodology and findings)  
 
-### Current Status (October 2025)  
-- Backend APIs functional  
-- Frontend live demo completed  
-- User evaluation ongoing  
-- Preparing final documentation and submission (December 2025)  
 
----
+The project comprises:
 
-## Tech Stack  
-- Frontend: Streamlit, HTML, CSS  
-- Backend: FastAPI (Python)  
-- Database: JSON simulation  
-- AI Integration: Ollama text model  
-- Design Tools: Figma, Miro, TouchDesigner  
+1. **A real, working Try-On MVP**
+
+Built with MediaPipe, JavaScript, Three.js, and Vite;
+
+Simulating AR jewellery try-on functionality within e-commerce livestreaming scenarios
+
+
+2. **Research documentation**
+Design workflows, milestone reports, inspiration boards, system diagrams
+
+3. **Prototypes and tools**
+Including data processing scripts, early testing iterations, and other technical explorations
+
+
+
+
+## Repository Structure
+
+```
+AI-Driven-Gamified-E-commerce-Livestreaming/
+│
+├── README.md                 // We are here now
+│
+├── docs/                     // Research documentation & reference materials
+│     ├── Milestone Report.pdf
+│     ├── inspiration.png
+│     ├── systemMap_1.png
+│     ├── backendDemo.png
+│     └── mobile1.png
+│
+├── prototypes/               // All prototypes built during the project
+│     ├── tryon-mvp/         // Final working AR Try-On MVP
+│     └── douyin_live_chat_to_csv.py
+│
+└── (other academic outputs as needed)
+```
+
+
+
+
+## Try-On MVP (Final Prototype)
+
+Location:
+`prototypes/tryon-mvp/`
+
+This MVP simulates a livestream shopping environment with:
+
+### ** Features**
+
+* **AR face jewellery try-on** using MediaPipe Face Landmarker
+* **AR hand / bracelet try-on** using MediaPipe Hand Landmarker
+* **Livestream-style UI** with host video, live chat, and bullet comments
+* **Basic gamification cues**, such as interaction loops and attention rewards
+* **3D asset fitting** using custom calculations in `fit.js`
+* **Add-to-cart interactions** mimicking e-commerce behaviour
+
+### ** Tech Stack**
+
+* JavaScript (ES6)
+* MediaPipe Tasks Vision (face / hand)
+* Three.js (3D model alignment)
+* HTML / CSS
+* Vite
+
+### **▶ How to Run**
+
+```bash
+cd prototypes/tryon-mvp
+npm install
+npm run dev
+```
+
+Open the printed local URL in Chrome and allow camera access.
+
+
+
+
+## Research Components
+
+All conceptual work, diagrams, and written artifacts used in the dissertation process are stored in `/docs`.
+This includes:
+
+* User journey diagrams
+* System architecture
+* Visual inspiration
+* Milestone reports
+* Technical workflow references
+
+These documents support the theoretical analysis in the dissertation.
+
+
+
+
+## Other Prototypes & Tools
+
+### ** `douyin_live_chat_to_csv.py`**
+
+A lightweight script for extracting Douyin livestream comments into structured CSV files.
+Used during early data exploration and behavioural analysis.
+
+More prototypes will be added as the project evolves.
+
+
+
+
+## Project Progress Log
+
+A simplified timeline of major development milestones.
+
+### **Week 1 — Research Setup & Technical Investigation**
+
+* Literature review: gamification, AI UX, livestream commerce
+* Tested MediaPipe face tracking and hand landmarks
+* Defined project scope and technical feasibility
+
+### **Week 2 — First AR Try-On Demo**
+
+* Implemented basic face tracking
+* Built initial overlay alignment
+* Set up Vite environment and file structure
+* Designed livestream UI mock-up
+
+### **Week 3 — Interaction & Gamification Layer**
+
+* Added chatbox, fake comments, and UI actions
+* Added add-to-cart drawer and thumbnail preview
+* Implemented jitter smoothing for stable fitting
+* Recorded early demonstration video
+
+### **Week 4 — Multi-modal Try-On**
+
+* Added hand-based try-on (bracelet / ring simulation)
+* Integrated multiple 3D assets
+* Added host background video and timed events
+
+### **Week 5 — Documentation & Refinement**
+
+* Cleaned code structure and wrote documentation
+* Organised repository into `docs` and `prototypes`
+* Prepared the MVP for dissertation submission
+
+
+
+
+## Future Work
+
+* Advanced gesture interactions (swipe to switch items)
+* Emotion-aware recommendation prompts
+* More realistic 3D jewellery rendering (HDRI + PBR materials)
+* Backend service for user behaviour logging
+* Integrating user testing data into adaptive UI logic
+
+
+
+
+## Acknowledgements
+
+* Creative Computing Institute (UAL)
+* MediaPipe (Google)
+* Three.js Community
+* Mentors and participants involved in user testing
+
 
